@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+body{
+    /* padding: 100px; */
+}  
+section {
+    margin-bottom: 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.nav li {
+    float: right;
+}
+.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.nav li a:hover {
+    background-color: #111;
+}
+
+
+.header {
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+.hero h2 {
+    display: inline-block;
+    font-size: 48px;
+    color: #ffffff;
+}
+
+.hero h2 .diz {
+    font-size: 48px;
+    color: #81fd04;
+}
+
+.hero {
+    height: 400px;
+    position: relative;
+    width: 100vw;
+    margin-bottom: 25px;
+    background-image: url("../images/hero_image.png");
+    background-size: cover;
+    background-position: center;
+}
+.content{
+    margin: 10px;
+    display: flex;
+}
+.cards{
+    margin: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.contact ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+.contact li {
+    float: left;
+}
+.contact li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.contact li a:hover {
+    background-color: #111;
+}
+
+.footer {
+    position: relative;
+    width: 100vw;
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2a607c;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+        flex-direction: column;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .cards{
+        flex-direction: column;
+    }
+}
